@@ -5,6 +5,6 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 RUN pip3 install pytest
 COPY . .
-EXPOSE 8080
+EXPOSE 5000
 CMD ["python" , "app.py"]
 
